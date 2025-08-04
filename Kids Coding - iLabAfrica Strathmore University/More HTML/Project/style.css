@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    color: #fff;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 24px; /* Smaller title */
+}
+
+header .tagline {
+    font-size: 14px; /* Smaller tagline text */
+    margin: 5px 0;
+    color: #aaa;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00509e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #00376b;
+}

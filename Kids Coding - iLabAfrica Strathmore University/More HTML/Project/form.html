@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1> My HTML forms</h1>
+        <form action="action.php" id="registrationForm">
+            <label for="fname">First Name</lable><br>
+            <input type="text" id="fname" name="fname" value="first name" required><br><br>
+            <small class="error" id="fnameError">First name must contain only letters. </small>
+            
+            <label for="lname">Last Name </label> <br>
+            <input type="text" id="lname" name="lname" value="Last Name" required><br><br>
+            <small class="error" id="fnameError">Last name must contain only letters. </small>
+            
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" name="email" value="email" required><br><br>
+
+            <label for="gschool"> Where I went to school</label><br>
+            <label><input type="radio" id="gschool" name="gschool" value="">School A</label><br>
+            <label><input type="radio" id="gschool" name="gschool" value="">School B</label><br>
+            <label><input type="radio" id="gschool" name="gschool" value="">School C</label><br><br>
+
+            <label for="fruits"> When I went to the market, I bought:</label> <br>
+            <label><input type="checkbox" id="fruits" name="fruits" value="">Mango </label><br>
+            <label><input type="checkbox" id="fruits" name="fruits" value="">Oranges </label><br>
+            <label><input type="checkbox" id="fruits" name="fruits" value="">Banana </label><br>
+
+            <button type="submit" id="submitbtn">Submit</button>
+            
+        </form>
+        <script src="validate.js"></script>
+    </body>
+</html>

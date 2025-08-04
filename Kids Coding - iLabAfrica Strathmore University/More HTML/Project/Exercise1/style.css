@@ -1,0 +1,36 @@
+body{
+    background-color:aqua;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-repeat: repeat-x;
+}
+h1 {
+    color: aliceblue;
+}
+h2, p{
+    color: rgb(255, 0, 119);
+}
+ol li{
+  list-style: square;  
+}
+img {
+    margin: 0rem;
+    border: 1 solid black;
+    border-radius: 1 solid black;
+    border-color: rgb(6, 6, 9);
+}
+table{
+    width: 50%;
+}
+table, th, td {
+    border: 1px solid black;
+   /* border-collapse: collapse;*/
+   border-radius: 10px;
+}
+th, td{
+    background-color: bisque;
+    /*border-style: dashed;*/
+}

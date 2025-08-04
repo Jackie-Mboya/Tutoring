@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Space Explorer Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+
+            }
+        </style>
+    </head>
+    <body style="">
+        <!--Header section-->
+        <header>
+            <h2> Space Explorer Game </h2>
+            <p class="tagline">Collect stars and dodge asteroids!</p>
+        </header>
+        
+        <h1> My First Space Explorer Game</h1>
+
+        <main>
+
+            <!-- Game Instructions -->
+
+            <section id="instructions">
+                <h3> How to play:</h3>
+                <ul>
+                    <li>Use <strong>Left</strong> and <strong>Right</strong> arrow keys to move your spaceship.</li>
+                    <li>Collect the stars to earn points.</li>
+                    <li>Avoid the asteroids to stay in the game!</li>
+                </ul>
+            </section>
+            <div class="instructions"></div>
+
+             <!-- Game Container -->
+              
+            <section id="game-area">
+                <h3>Game Area:</h3>
+                <div id="game-container">
+                    <!-- Spaceship controlled by the player -->
+                    <div id="spaceship" title="Your Spaceship"></div>
+
+                    <!-- Star: A collectible item -->
+                    <div id="star" class="collectible" title="Collect this star!"></div>
+
+                    <!-- Asteroid: An obstacle -->
+                    <div id="asteroid" class="obstacle" title="Avoid this asteroid!"></div>
+                </div>
+            </section>
+
+            <!-- Score Display -->
+            <section id="game-score">
+                <h3>Your Score:</h3>
+                <p id="score">Score: 0</p>
+            </section>
+
+        </main>
+        <!-- Footer Section -->
+        <footer style>
+            <p>&copy; 2024 Space Explorer Game. Created by Jackie</p>
+        </footer>
+        <script src="script2.js"></script>
+    </body>
+</html>
