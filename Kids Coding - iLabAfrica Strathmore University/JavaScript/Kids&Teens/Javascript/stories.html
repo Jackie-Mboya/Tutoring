@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Content Change</title>
+<style>
+  /* Optional: Some basic styling */
+  .button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  #content {
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Buttons -->
+<button class="button" onclick="changeContent('content1')">Button 1</button>
+<button class="button" onclick="changeContent('content2')">Button 2</button>
+<button class="button" onclick="changeContent('content3')">Button 3</button>
+
+<!-- Content -->
+<div id="content">
+  <!-- Initially empty, will be filled by JavaScript -->
+</div>
+
+<script>
+  // Object to store content for each button
+  var buttonContent = {
+    content1: '<h2>Content for Button 1</h2><p>This is the content for Button 1.</p>',
+    content2: '<h2>Content for Button 2</h2><p>This is the content for Button 2.</p>',
+    content3: '<h2>Content for Button 3</h2><p>This is the content for Button 3.</p>'
+  };
+
+  // Function to change content based on button clicked
+  function changeContent(contentId) {
+    var contentDiv = document.getElementById('content');
+    contentDiv.innerHTML = buttonContent[contentId] || '<h2>Default Content</h2><p>This is the default content.</p>';
+  }
+</script>
+
+</body>
+</html>

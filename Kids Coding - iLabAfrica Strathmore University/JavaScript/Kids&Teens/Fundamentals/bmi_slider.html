@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>JavaScript Fundamentals – Part 1</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="topnav">
+    <a class="active" href="index.html">BMI Intro </a>
+    <a href="bmi_calc.html">BMI Calculator</a>
+    <a href="bmi_slider.html">BMI Slider</a>
+  </div>
+
+  <h1>JavaScript Fundamentals – Part 1</h1>
+
+  <form id="bmiForm">
+    <label for="mass">Enter your weight (kg):</label>
+    <input type="number" id="mass" name="mass" required>
+    <label for="height">Enter your height (m):</label>
+    <input type="number" id="height" name="height" step="0.01" required>
+    <button type="submit">Calculate BMI</button>
+  </form>
+
+  <div class="slider-container">
+    <div class="slider" id="bmiSlider"></div>
+    <div class="slider-mark" id="bmiSliderMark"></div>
+  </div>
+
+  <p class="result" id="bmiResult"></p>
+
+  <script src="slider_scripts.js"></script>
+</body>
+</html>

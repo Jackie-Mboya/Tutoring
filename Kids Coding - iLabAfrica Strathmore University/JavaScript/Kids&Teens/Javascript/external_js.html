@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Demo External JavaScript</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunctionExternal()">Try it</button>
+
+<p>This example links to "myScript.js".</p>
+<p>(myFunction is stored in "myScript.js")</p>
+
+<p>Placing scripts in external files has some advantages:
+    <ol>
+
+    <li>It separates HTML and code</li>
+    <li>It makes HTML and JavaScript easier to read and maintain</li>
+    <li>Cached JavaScript files can speed up page loads</li>
+
+</ol>
+
+JavaScript can "display" data in different ways:<br>
+<ol>
+<li>Writing into an HTML element, using innerHTML.</li>
+<li>Writing into the HTML output using document.write().</li>
+<li>Writing into an alert box, using window.alert().</li>
+<li>Writing into the browser console, using console.log().</li>
+
+</ol>
+
+</p>
+
+<script src="myScript.js"></script>
+
+<script>
+    document.write(5 + 6);
+    </script>
+
+<p>document.write() after an HTML document is loaded, will delete all existing HTML:</p> 
+
+<button type="button" onclick="document.write(5 + 6)">Document Write</button>
+
+<script>
+    window.alert("Which event occurs when the user clicks on an HTML element?");
+    let x,y,z;
+    x=20;
+    y=50;
+    z="The sum of x and y is:"
+    console.log(z)
+    console.log(x+y)
+    
+    </script>
+
+<p>You can skip the window keyword.</p>
+
+</body>
+</html>

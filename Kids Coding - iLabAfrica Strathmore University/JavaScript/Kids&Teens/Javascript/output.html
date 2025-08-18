@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Javascript Outputs </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>My First Web Page</h1>
+        <p>My First Paragraph</p>
+
+        <!--Using document.write after-->
+
+        <!--<button type="button" onclick="document.write(12 + 6)">Try it</button> -->
+
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        
+        <script>
+            //Using .innerHTML
+            //document.getElementById("demo").innerHTML = 9 + 6;
+            //document.write(5 + 6);
+
+            //to output an alert box
+
+           // window.alert(30 * 105);
+
+           // Print into a browser.
+           let x = 5;
+           ++x;
+           console.log(x);
+           let y = 10;
+           y--;
+           console.log(y);
+           let z=8;
+           console.log(z**2);
+
+           //Create an Object
+            const person = {
+                name: "John",
+                age: 30,
+                city: "New York"
+            };
+            
+            //document.getElementById("demo").innerHTML = person;
+            //document.getElementById("demo").innerHTML = person.name + ", " + person.age + ", " + person.city;
+            
+
+            // Functions
+
+            function myFunction(name){
+                return `Hello, ${name}!`;
+            }
+            console.log(myFunction("John Paul"));
+
+            
+            // Another function
+            function sayHello(){
+                console.log("Hello, World!");
+            }
+            sayHello();
+            
+            // Second Function
+            function product(p1, p2) {
+                return p1 * p2;
+              }
+              
+              let result = product(10, 30);
+              document.getElementById("demo").innerHTML = result;
+
+              //Exercise One
+              function addition(x, y){
+                return x + y;
+              }
+              var result1 = addition(200, 400);
+              document.getElementById("demo1").innerHTML=result1;
+
+              //Exercise two
+
+        </script>
+    </body>
+</html>

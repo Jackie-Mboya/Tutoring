@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "New Content";
+            }
+        </script>
+            
+    </head>
+<body>
+
+<h2>JavaScript in Head and Body</h2>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p id="demo"> This lesson will make learning JavaScript functions and where to put scripts in HTML easy and exciting! 
+    By the end, you'll know how to make your web pages interactive and cool..
+
+</p>
+
+<h2 id = 'JavaScript'>Intro to JavaScript Functions</h2>
+
+<p>
+    Functions are like magic spells in JavaScript that make things happen on your web page.<br>
+    We write functions to do specific tasks, like saying hello or calculating numbers.<br>
+    To use a function, you just say its name, and it does its job!<br>
+    <br>
+    We create a function using a special word, function, followed by its name and what it should do inside {}.<br>
+    For example: function sayHello() { alert("Hello!"); }.<br>
+    To make the function do its thing, we call it by its name, like sayHello();<br>
+
+    We can put our JavaScript code in two places: <b>head or body </b>
+    If we want something to happen as soon as the page loads, we put our code in the head.
+    If we want something to happen when the user interacts with the page, like clicking a button, we put our code in the 
+    body.
+
+</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+<script>
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "New Content";
+    }
+</script>
+</body>
+</html> 
