@@ -1,7 +1,17 @@
 // Linking a JavaScript File
+//Automatic variable declaration
+y = 10;
+z = 12;
+console.log(y, z);
+console.log( y + z);
+
 let js = "amazing";
+let java = 15;
 console.log(js)
 console.log(40 + 8 + 23 - 10);
+
+const myName = "Jackline Mboya";
+console.log(myName)
 
 // // Values and Variables
 console.log("Jonas");
