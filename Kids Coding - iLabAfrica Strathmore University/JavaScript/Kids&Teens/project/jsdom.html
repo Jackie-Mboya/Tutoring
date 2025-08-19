@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Web Page!</title>
+    <!-- We're using Tailwind CSS for some basic styling to make it look nice! -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #334155;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            max-width: 90%;
+        }
+        button {
+            transition: all 0.2s ease-in-out;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container space-y-8">
+        <h1 class="text-4xl font-bold text-gray-800">Magical Web Page! ✨</h1>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+            Click the buttons below to see what happens. Can you figure out the difference between the three?
+        </p>
+
+        <!-- A div with some hidden HTML content -->
+        <div id="content-box" class="p-6 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 rounded-lg hidden">
+            <p>This is a secret message!</p>
+            <p>Did you find me? <strong>Yes!</strong></p>
+            <p><code>&lt;script&gt;alert('Boo!')&lt;/script&gt;</code></p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <!-- Button to use innerText -->
+            <button onclick="changeTextWithInnertext()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+                Change with innerText
+            </button>
+
+            <!-- Button to use innerHTML -->
+            <button onclick="changeTextWithInnerhtml()" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-75">
+                Change with innerHTML
+            </button>
+
+            <!-- Button to use document.write -->
+            <button onclick="changeTextWithDocumentWrite()" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-opacity-75">
+                Change with document.write
+            </button>
+        </div>
+
+        <!-- This is where the output will go -->
+        <div class="output mt-8 p-6 border-2 border-dashed border-gray-300 rounded-lg text-left">
+            <p id="output-area" class="text-gray-700">The magic output will appear here!</p>
+        </div>
+    </div>
+
+    <script>
+        // Get a reference to the output area on the page
+        const outputArea = document.getElementById('output-area');
+        // Get a reference to the hidden content box
+        const contentBox = document.getElementById('content-box');
+
+        // This function uses .innerText to get content
+        function changeTextWithInnertext() {
+            // .innerText gets only the visible text inside an element, ignoring HTML tags
+            const newText = contentBox.innerText;
+            // Now, we put that plain text into our output area
+            outputArea.innerText = newText;
+        }
+
+        // This function uses .innerHTML to get and set content
+        function changeTextWithInnerhtml() {
+            // .innerHTML gets ALL the content inside an element, including HTML tags
+            const newHtml = contentBox.innerHTML;
+            // Now, we put that HTML content into our output area.
+            // This is why the bold text and paragraphs will show up correctly!
+            outputArea.innerHTML = newHtml;
+        }
+
+        // This function uses document.write()
+        function changeTextWithDocumentWrite() {
+            // document.write() writes directly to the page.
+            // WARNING: If the page is already loaded, this will ERASE EVERYTHING on it!
+            // We'll use a custom message for this button to avoid clearing the whole page unexpectedly.
+            document.write('<div class="flex flex-col justify-center items-center h-screen bg-gray-100 text-center"><div class="container p-8 bg-white rounded-xl shadow-lg"><h2 class="text-4xl font-bold text-red-600">POOF! 💥</h2><p class="mt-4 text-xl text-gray-700">The entire page was replaced by this message!</p></div></div>');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM Exercise</title>
+</head>
+<body>
+
+    <h1>Welcome!</h1>
+    <p id="main-paragraph">This is the original paragraph. Click a button to change it.</p>
+
+    <br>
+
+    <!-- Button to change the paragraph text using .innerText -->
+    <button onclick="changeParagraphWithText()">Change with innerText</button>
+
+    <!-- Button to change the paragraph HTML using .innerHTML -->
+    <button onclick="changeParagraphWithHtml()">Change with innerHTML</button>
+
+    <!-- Button to change the heading text -->
+    <button onclick="changeHeading()">Change the Heading</button>
+
+    <script>
+        // A function to change the text of the paragraph using innerText
+        function changeParagraphWithText() {
+            // Get the paragraph element by its ID
+            const paragraph = document.getElementById('main-paragraph');
+            // Use .innerText to set the content. It will ignore any HTML tags.
+            paragraph.innerText = 'This is the new text. It is just plain text, not fancy.';
+        }
+
+        // A function to change the HTML of the paragraph using innerHTML
+        function changeParagraphWithHtml() {
+            // Get the paragraph element by its ID
+            const paragraph = document.getElementById('main-paragraph');
+            // Use .innerHTML to set the content. It will render any HTML tags.
+            paragraph.innerHTML = 'This is the new HTML. The word <strong>"HTML"</strong> is bold!';
+        }
+
+        // A function to change the text of the main heading
+        function changeHeading() {
+            // Get the h1 element by its tag name (since there's only one)
+            const heading = document.getElementsByTagName('h1')[0];
+            // Use innerText to change the content
+            heading.innerText = 'You Changed the Heading!';
+        }
+    </script>
+
+</body>
+</html>
