@@ -7,11 +7,8 @@ console.log( y + z);
 
 let js = "amazing";
 let java = 15;
-console.log(js)
+console.log(js);
 console.log(40 + 8 + 23 - 10);
-
-const myName = "Jackline Mboya";
-console.log(myName)
 
 // // Values and Variables
 console.log("Jonas");
@@ -26,7 +23,7 @@ console.log(myFirstName);
 // // Variable name conventions
 let jonas_matilda = "JM";
 let $function = 27;
-console.log($function)
+console.log($function);
 
 let person = "jonas";
 let PI = 3.1415;
@@ -46,14 +43,14 @@ console.log(myFirstJob);
 // ////////////////////////////////////
 // // Data Types
 let javascriptIsFun = true;
-console.log('Data Types')
+console.log('Data Types');
 console.log(javascriptIsFun);
 
 console.log(typeof true);
 console.log(typeof javascriptIsFun); //boolean
 console.log(typeof 23); //number
 console.log(typeof 'Jonas'); //string
-console.log(typeof 3.14) //number
+console.log(typeof 3.14); //number
 
 javascriptIsFun = 'YES!';
 console.log(typeof javascriptIsFun);
@@ -78,7 +75,7 @@ const birthYear = 1991;
 const Job = 'Student';
 
 var job = 'programmer';
-job = 'teacher'
+job = 'teacher';
 
 var lastName = 'Schmedtmann';
 console.log(lastName);
