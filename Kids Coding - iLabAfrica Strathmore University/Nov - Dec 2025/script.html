@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body> 
+        <h1>JavaScript in HTML</h1>
+        <h1> What Can JavaScript Do?</h1>
+        <p>JavaScript can change HTML content:</p>
+
+        <h2 id="demo">My First JavaScript Class Example</h2>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello Javascript!"'>Click Me!</button>
+        
+        <p>JavaScript can change HTML attributes:</p>
+        <img id="myImage" src="https://www.w3schools.com/js/pic_bulbon.gif" style="width:100px">
+        <br>
+        <button type="button" onclick='document.getElementById("myImage").src = "https://www.w3schools.com/js/pic_bulboff.gif"'>Turn off the light</button>
+        <button type="button" onclick='document.getElementById("myImage").src = "https://www.w3schools.com/js/pic_bulbon.gif"'>Turn on the light</button>
+
+        <p>JavaScript can change HTML styles (CSS):</p>
+        <h2 id="styleDemo">JavaScript can change the style of an HTML element.</h2>
+        <button type="button" onclick='document.getElementById("styleDemo").style.color = "red"'>Change text color to red</button>
+
+        <p>JavaScript can hide HTML elements:</p>
+        <h2 id="hideDemo">You can hide me!</h2>
+        <button type="button" onclick='document.getElementById("hideDemo").style.display = "none"'>Hide the text</button>
+    </body>
+</html>
