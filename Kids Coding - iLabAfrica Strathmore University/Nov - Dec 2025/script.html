@@ -1,34 +1,138 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body> 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript Example Columns</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!--Link to JavaScript-->
+    <script src="script.js" async defer></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ===== COLUMN 1 ===== -->
+    <div class="column">
         <h1>JavaScript in HTML</h1>
-        <h1> What Can JavaScript Do?</h1>
+        <h1>What Can JavaScript Do?</h1>
+
         <p>JavaScript can change HTML content:</p>
 
         <h2 id="demo">My First JavaScript Class Example</h2>
-        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello Javascript!"'>Click Me!</button>
-        
+        <button type="button"
+            onclick='document.getElementById("demo").innerHTML = "Hello Javascript!"'>
+            Click Me!
+        </button>
+
         <p>JavaScript can change HTML attributes:</p>
         <img id="myImage" src="https://www.w3schools.com/js/pic_bulbon.gif" style="width:100px">
         <br>
-        <button type="button" onclick='document.getElementById("myImage").src = "https://www.w3schools.com/js/pic_bulboff.gif"'>Turn off the light</button>
-        <button type="button" onclick='document.getElementById("myImage").src = "https://www.w3schools.com/js/pic_bulbon.gif"'>Turn on the light</button>
+        <button type="button"
+            onclick='document.getElementById("myImage").src = "https://www.w3schools.com/js/pic_bulboff.gif"'>
+            Turn off the light
+        </button>
+        <button type="button"
+            onclick='document.getElementById("myImage").src = "https://www.w3schools.com/js/pic_bulbon.gif"'>
+            Turn on the light
+        </button>
 
         <p>JavaScript can change HTML styles (CSS):</p>
         <h2 id="styleDemo">JavaScript can change the style of an HTML element.</h2>
-        <button type="button" onclick='document.getElementById("styleDemo").style.color = "red"'>Change text color to red</button>
+        <button type="button"
+            onclick='document.getElementById("styleDemo").style.color = "red"'>
+            Change text color to red
+        </button>
 
         <p>JavaScript can hide HTML elements:</p>
         <h2 id="hideDemo">You can hide me!</h2>
-        <button type="button" onclick='document.getElementById("hideDemo").style.display = "none"'>Hide the text</button>
-    </body>
+        <button type="button"
+            onclick='document.getElementById("hideDemo").style.display = "none"'>
+            Hide the text
+        </button>
+    </div>
+
+
+
+    <!-- ===== COLUMN 2 ===== -->
+    <div class="column">
+        <h2>JavaScript Variable Example</h2>
+        <p>In this examples, we use variables a, b, and c to store values. We declare the variables using var.</p>
+
+        <p>Addition of a and b is stored in c.</p>
+        <p id="varDemo"></p>
+
+        <p>Multiplication of a and b is stored in c.</p>
+        <p id="varDemo1"></p>
+
+        <p>Division of a and b is stored in c.</p>
+        <p id="varDemo2"></p>
+
+        <p>Subtraction of a and b is stored in c.</p>
+        <p id="varDemo3"></p>
+
+        <h2>JavaScrirpt Data Types</h2>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- ===== COLUMN 3 ===== -->
+    <div class="column">
+
+
+
+        <h2>Variable const declaration</h2>
+        <p>.</p>
+
+        <p>In this example, we use the const keyword to declare a constant variable named PI. The value of a constant variable cannot be changed through reassignment, and it can't be redeclared.</p>
+        <P> Change the value of PI</p>
+        <p id="constDemo"></p>
+
+    </div>
+
+    <div class="column">
+        <h2>JavaScript Data Types</h2>
+        <ul>
+            <li>String</li>
+            <li>Number</li>
+            <li>Boolean</li>
+            <li>Object</li>
+            <li>Array</li>
+            <li>Undefined</li>
+            <li>Null</li>
+        </ul>
+        <p> Integer Data Type </p>
+        <p id="dataTypeDemo"></p>
+        <p> String Data Type </p>
+        <p id="dataTypeDemo1"></p>
+        <p> Boolean Data Type </p>
+        <p id="dataTypeDemo2"></p>
+        <p> Object Data Type </p>
+        <p id="dataTypeDemo3"></p>
+        <p> Array Data Type </p>
+        <p id="dataTypeDemo4"></p>
+        <p> Undefined Data Type </p>
+        <p id="dataTypeDemo5"></p>
+        <p> Null Data Type </p>
+        <p id="dataTypeDemo6"></p>
+        <p> Typeof Operator </p>
+        <p id="dataTypeDemo7"></p>
+        <p> Empty String </p>
+        <p id="dataTypeDemo8"></p>
+    </div>
+
+</div>
+
+</body>
 </html>
