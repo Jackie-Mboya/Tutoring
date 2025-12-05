@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>If Conditional Statement</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h2> If Conditional Statement </h2>
+        <p> Display "Good Day" if the time is before 6pm (18:00): </p>
+        <p id="demo">Good Evening!</p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+
+        <script>
+            if (new Date().getHours() < 18) {
+                document.getElementById("demo").innerHTML = "Good Day!";
+            }
+            let age = 20;
+            if (age >= 18) {
+                document.getElementById("demo1").innerHTML = "You are old enough to vote!";
+            }
+
+            let year_old = 15;
+            let text = "You cannot vote yet.";
+            if (year_old >= 18) {
+                text = "You are old enough to vote!";
+            }
+            document.getElementById("demo2").innerHTML = text;
+
+            //Exercise
+            if (new Date().getDay() == 4) {
+                document.getElementById("demo3").innerHTML = "It is Thursday!";
+            }
+
+            //check for current time
+            document.getElementById('demo4').innerHTML = new Date().toLocaleTimeString()
+        </script>
+    </body>
+</html>

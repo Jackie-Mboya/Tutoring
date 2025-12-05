@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>For Loop Days of the Week</title>
+</head>
+
+<body>
+    <h1>The for Loop</h1>
+    <p>Using a for loop to print the days of the week:</p>
+
+    <p id="forDays"></p>
+
+    <script>
+        // Array of days
+        let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+        // Variable to store output
+        let output = "";
+
+        // Loop through the days
+        for (let i = 0; i < days.length; i++) {
+            output += days[i] + "<br>";
+        }
+
+        // Display in the webpage
+        document.getElementById("forDays").innerHTML = output;
+    </script>
+
+</body>
+</html>
